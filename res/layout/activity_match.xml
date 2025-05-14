@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0E79A">
+
+    <!-- 底部玩家（正三角形底部） -->
+    <LinearLayout
+        android:id="@+id/player_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="80dp">
+
+        <ImageView
+            android:id="@+id/avatar_bottom"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/wait"
+            android:scaleType="centerCrop"
+            android:background="#000000"/>
+
+        <TextView
+            android:id="@+id/name_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在匹配中"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <!-- 左上玩家（正三角形左上角） -->
+    <LinearLayout
+        android:id="@+id/player_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/player_right"
+        app:layout_constraintBottom_toTopOf="@+id/player_bottom"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp">
+
+        <ImageView
+            android:id="@+id/avatar_left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/avatar_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wait"/>
+
+        <TextView
+            android:id="@+id/name_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="正在匹配中"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <!-- 右上玩家（正三角形右上角） -->
+    <LinearLayout
+        android:id="@+id/player_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/player_left"
+        app:layout_constraintBottom_toTopOf="@+id/player_bottom"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp">
+
+        <ImageView
+            android:id="@+id/avatar_right"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/avatar_border"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wait"/>
+
+        <TextView
+            android:id="@+id/name_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="正在匹配中"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

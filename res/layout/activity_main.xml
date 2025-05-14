@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/main_background"> <!-- 设置背景图片 -->
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/title"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_g"
+        android:backgroundTint="@null"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="开始游戏"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_g"
+        android:backgroundTint="@null"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="游戏规则"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_g"
+        android:backgroundTint="@null"
+        android:gravity="center"
+        android:padding="16dp"
+        android:stateListAnimator="@null"
+        android:text="个人信息"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_y"
+        android:text="退出游戏"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@null"
+        android:stateListAnimator="@null" />
+
+
+</LinearLayout>

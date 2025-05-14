@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="棋子规则介绍"
+        android:textSize="28sp"
+        android:textColor="#565150"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnCommon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GENERAL"
+        android:textSize="18sp"
+        android:backgroundTint="#AF4C7A"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- 棋子按钮 -->
+    <Button
+        android:id="@+id/btnPawn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PAWN"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnRook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ROOK"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnKnight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KNIGHT"
+        android:textSize="18sp"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnBishop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BISHOP"
+        android:textSize="18sp"
+        android:backgroundTint="#9C27B0"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnGuard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KING"
+        android:textSize="18sp"
+        android:backgroundTint="#F44336"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnCannon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUEEN"
+        android:textSize="18sp"
+        android:backgroundTint="#607D8B"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:alpha="0.7" /> <!-- 按下时透明度为 0.7 -->
+    <item android:alpha="1.0" /> <!-- 默认透明度为 1.0 -->
+</selector>
